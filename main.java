@@ -1,24 +1,22 @@
 import java.util.Scanner;
 
 public class main {
-    public static void main(String [] args){
 
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
-        int mat,fiz,kimya;
+       double para;
+       para = input.nextInt();
 
+       double KDVTutarı = (para >= 1000) ? 8:18;
 
+       double KDV = (para /100) * KDVTutarı;
 
-        System.out.println("mat not giriniz : ");
-        mat = input.nextInt();
-        System.out.println("fiz not giriniz : ");
-        fiz = input.nextInt();
-        System.out.println("kimya not giriniz : ");
-        kimya = input.nextInt();
+       double paraKDV = para + KDV;
 
-
-        int ort = (mat + fiz + kimya ) /3;
-        System.out.println("ort : " +ort);
-        System.out.println(ort > 60 ? "sınıfı geçti" : "sınıfta kaldı");
+       System.out.println("KDV'siz Fiyat : " + para);
+       System.out.println("KDV'li Fiyat : " + paraKDV);
+       System.out.println("KDV tutarı : " + KDV);
     }
+
 }
