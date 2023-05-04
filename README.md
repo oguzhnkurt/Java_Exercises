@@ -1,3 +1,3 @@
 # Java_Exercises
 
-These exercises are homework for Patika.dev java lessons. 
+These exercises are homework for Patika.dev Java lessons. 
