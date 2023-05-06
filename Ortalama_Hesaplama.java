@@ -7,8 +7,6 @@ public class Ortalama_Hesaplama {
 
         int mat,fiz,kimya;
 
-
-
         System.out.println("mat not giriniz : ");
         mat = input.nextInt();
         System.out.println("fiz not giriniz : ");
